@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- Form View Of Customer  --><!--open_purchase_first_approval_list-->
+    <record id="dashboard_approval_form_view" model="ir.ui.view">
+        <field name="name">dash>board.form.view</field>
+        <field name="model">dash.board</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="name" invisible="1"></field>
+                    <h2 class="title"><strong>USER ALL APPROVALS</strong></h2>
+                    <hr/>
+                    <div class="row"><h3><strong style="color: #9E4485;">SALES APPROVALS</strong></h3></div>
+                    <div class="row">
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Marketing " 
+                        name="open_sales_first_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_s_first_approval"></field>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Production "
+                        name="open_sales_second_approval_list" 
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_s_second_approval"></field>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Finance "
+                        name="open_sales_third_approval_list" 
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_s_third_approval"></field>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="CEO " 
+                        name="open_sales_fourth_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_s_fourth_approval"></field>)</button>
+                    </div>
+                    <hr/>
+                    <div class="row"><h3><strong style="color: #9E4485;">INVOICE APPROVALS</strong></h3></div>
+                    <div class="row">
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Accounting "
+                        name="open_invoice_first_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_invoice_first_approval"/>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Finance "
+                        name="open_invoice_second_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_nvoice_second_approval"/>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="CEO "
+                        name="open_invoice_third_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_nvoice_third_approval"/>)</button>
+                    </div>
+                    <hr/>
+                    <div class="row"><h3><strong style="color: #9E4485;">CUSTOMER PAYMENT APPROVALS</strong></h3></div>
+                    <div class="row">
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Accounting "
+                        name="open_customer_payments_first_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_customer_payment_first_approval"/>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Finance "
+                        name="open_customer_payments_second_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_customer_payment_second_approval"/>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="CEO "
+                        name="open_customer_payments_third_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_customer_payment_third_approval"/>)</button>
+                    </div>
+                    <hr/>
+                    <div class="row"><h3><strong style="color: #9E4485;">PURCHASE APPROVALS</strong></h3></div>
+                    <div class="row">
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Internal Audit " 
+                        name="open_purchase_first_approval_list"
+                        style="border: 2px solid white; height: 80px;" 
+                        icon="fa-bars"
+                        type="object">(<field name="total_p_first_approval"></field>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="External Audit " 
+                        name="open_purchase_second_approval_list"
+                        style="border: 2px solid white; height: 80px;" 
+                        icon="fa-bars"
+                        type="object">(<field name="total_p_second_approval"></field>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Purchase Committee " 
+                        name="open_purchase_third_approval_list"
+                        style="border: 2px solid white; height: 80px;" 
+                        icon="fa-bars"
+                        type="object">(<field name="total_p_third_approval"></field>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="CEO " 
+                        name="open_purchase_fourth_approval_list"
+                        style="border: 2px solid white; height: 80px;" 
+                        icon="fa-bars"
+                        type="object">(<field name="total_P_fourth_approval"></field>)</button>
+                    </div>
+                    <hr/>
+                    <div class="row"><h3><strong style="color: #9E4485;">BILLS APPROVALS</strong></h3></div>
+                    <div class="row">
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Accounting "
+                        name="open_bill_first_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_bill_first_approval"/>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Finance "
+                        name="open_bill_second_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_bill_second_approval"/>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="CEO "
+                        name="open_bill_third_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_bill_third_approval"/>)</button>
+                    </div>
+                    <hr/>
+                    <div class="row"><h3><strong style="color: #9E4485;">VENDOR PAYMENTS APPROVALS</strong></h3></div>
+                    <div class="row">
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Accounting " 
+                        name="open_payments_first_approval_list" 
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_pay_first_approval"></field>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Finance " 
+                        name="open_payments_second_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_pay_second_approval"></field>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="CEO " 
+                        name="open_payments_third_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_pay_third_approval"></field>)</button>
+                    </div>
+                    <hr/>
+                    <div class="row"><h3><strong style="color: #9E4485;">JOURNAL APPROVALS</strong></h3></div>
+                    <div class="row">
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Accounting " 
+                        name="open_journal_first_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars" 
+                        type="object">(<field name="total_jrn_first_approval"></field>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="Finance " 
+                        name="open_journal_second_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_jrn_second_approval"></field>)</button>
+
+                        <button class="col-lg-3 col-md-6 my-1 oe_highlight" string="CEO " 
+                        name="open_journal_third_approval_list"
+                        style="border: 2px solid white; height: 80px;"
+                        icon="fa-bars"
+                        type="object">(<field name="total_jrn_third_approval"></field>)</button>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+    <!--   Define custom action -->
+
+    <record id="action_dashboard_approval" model="ir.actions.act_window">
+        <field name="name">Approval</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="target">inline</field>
+        <field name="res_model">dash.board</field>
+        <!-- <field name="view_type">form</field> -->
+        <field name="view_mode">form</field>
+    </record>
+
+    <menuitem id="meta_approval_root" name="Approvals" sequence="1"/>
+    <menuitem id="meta_approval_user_root" name="All Approvals" parent="meta_approval_root" action="action_dashboard_approval" sequence="2"/>
+
+</odoo>
+
