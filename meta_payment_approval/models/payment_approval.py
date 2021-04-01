@@ -17,7 +17,7 @@ class AccountPaymentApproval(models.Model):
         ('sent', 'Sent'), 
         ('reconciled', 'Reconciled'), 
         ('cancelled', 'Cancelled'), 
-        ], readonly=True, default='draft', copy=False, string="Status")
+        ], readonly=True, default='draft', copy=False, tracking=True, string="Status")
     
     
     def payment_set_for_approval(self):
